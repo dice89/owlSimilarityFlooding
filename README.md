@@ -35,3 +35,11 @@ You can use the example ontologies from the oaei competion to test the usage, a 
         MapPair[] result = Matcher.structMatch("cmt.owl", "Conference.owl", initialMapping, Match.FORMULA_TTT, Match.FG_PRODUCT);
         Match.dump(result);
 ```
+
+## Dependencies
+
+- Java 8
+- Second String
+- Similarity Flooding implementation http://infolab.stanford.edu/~melnik/mm/sfa/
+- RDF API
+- OWL API
