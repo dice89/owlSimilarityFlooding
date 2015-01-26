@@ -1,9 +1,3 @@
-/**
- * Copyright © Sergey Melnik (Stanford University, Database Group)
- *
- * All Rights Reserved.
- */
-
 
 package edu.stanford.db.rdf.model.i;
 

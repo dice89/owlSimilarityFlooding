@@ -10,6 +10,7 @@ import org.w3c.rdf.model.Model;
 import org.w3c.rdf.model.ModelException;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -58,9 +59,29 @@ public class Matcher {
         sf.formula = formula;
         sf.FLOW_GRAPH_TYPE = flow_graph_type;
 
-        MapPair[] result = sf.getMatch(onto1_model, onto2_model, initialMatching);
+        ArrayList<MapPair> addedMatchings = new ArrayList<MapPair>();
+
+        addedMatchings.addAll(initialMatching);
+
+        List<MapPair> initialMatchingWithDT = addDataTypeMatchings(owl_onto1,owl_onto2,addedMatchings);
+
+        MapPair[] result = sf.getMatch(onto1_model, onto2_model, initialMatchingWithDT);
         MapPair.sort(result);
 
         return result;
+    }
+
+    public static List<MapPair> addDataTypeMatchings(OWLOntology onto1, OWLOntology onto2, List<MapPair> dataTypeMatching) {
+
+
+        onto1.getDatatypesInSignature().forEach(owlDatatype -> {
+            onto2.getDatatypesInSignature().forEach(owlDatatype2 -> {
+                if (owlDatatype.equals(owlDatatype2)) {
+                    dataTypeMatching.add(new MapPair(owlDatatype.getIRI().toString(), owlDatatype2.getIRI().toString(), 1.0));
+                }
+                ;
+            });
+        });
+        return dataTypeMatching;
     }
 }
