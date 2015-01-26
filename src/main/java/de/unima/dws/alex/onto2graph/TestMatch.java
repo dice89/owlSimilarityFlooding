@@ -29,7 +29,7 @@ public class TestMatch {
         IRI conf_iri = IRI.create(new File("Conference.owl"));
         OWLOntology conf = OWLManager.createOWLOntologyManager().loadOntology(conf_iri);
 
-        List<MapPair> initialMapping = createInitialStringMappingJaroWinkler(cmt, conf);
+        List<MapPair> initialMapping = TestMatch.createInitialStringMappingJaroWinkler(cmt, conf);
 
         MapPair[] result = Matcher.structMatch("cmt.owl", "Conference.owl", initialMapping, Match.FORMULA_TTT, Match.FG_PRODUCT);
         Match.dump(result);

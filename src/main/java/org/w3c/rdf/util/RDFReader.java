@@ -1,9 +1,3 @@
-/**
- * Copyright © Sergey Melnik (Stanford University, Database Group)
- *
- * All Rights Reserved.
- */
-
 package org.w3c.rdf.util;
 
 import org.xml.sax.*;

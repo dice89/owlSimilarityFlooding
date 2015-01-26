@@ -1,44 +1,4 @@
-/**
- * A simple Element class for storing the element name, attributes
- * and children.
- *
- * $Log: Element.java,v $
- * Revision 1.3  2001/09/17 03:39:16  stefan
- * *** empty log message ***
- *
- * Revision 1.13  1999/05/04 15:23:39  lehors
- * commit after CVS crash
- *
- * Revision 1.10  1999/04/26 14:51:26  jsaarela
- * URI resolution improved.
- *
- * Revision 1.9  1998/12/15 17:00:44  jsaarela
- * New distribution release V1.7 on 15-Dec-98.
- *
- * Revision 1.8  1998/10/09 17:26:50  jsaarela
- * Parser conformance to RDF Model&Syntax dated 19981008
- *
- * Revision 1.7  1998/09/08 15:54:01  jsaarela
- * Distribution release V1.4 - aboutEachPrefix added, namespace management
- * improved.
- *
- * Revision 1.6  1998/08/28 10:03:15  jsaarela
- * Distribution release 1.3 on 28-Aug-98.
- *
- * Revision 1.5  1998/08/12 07:54:55  jsaarela
- * Namespace management now corresponds with the W3C Working
- * Draft dated 2-Aug-98.
- *
- * Revision 1.4  1998/07/30 13:39:32  jsaarela
- * multiple internal references fixed,
- * properties without children fixed.
- *
- * Revision 1.3  1998/07/27 12:20:54  jsaarela
- * 1st distribution version logged in.
- *
- *
- * @author Janne Saarela
- */
+
 package org.w3c.rdf.implementation.syntax.sirpac;
 
 import java.net.URL;

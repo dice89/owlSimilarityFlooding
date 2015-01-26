@@ -1,10 +1,4 @@
-/**
- * Simple Statement class
- *
- *
- * @author Sergey Melnik
- * @author Janne Saarela
- */
+
 package org.w3c.rdf.model;
 
 import org.w3c.rdf.model.*;

@@ -1,12 +1,4 @@
-/**
- * Copyright © World Wide Web Consortium, (Massachusetts Institute of
- * Technology, Institut National de Recherche en Informatique et en
- * Automatique, Keio University).
- *
- * All Rights Reserved.
- *
- * @author	Sergey Melnik <melnik@db.stanford.edu>
- */
+
 package org.w3c.rdf.implementation.model;
 
 import org.w3c.rdf.model.*;
