@@ -143,10 +143,10 @@ public class Match implements UntypedGateway {
     boolean ignorePredicates = TRY_ALL_ARCS; // || (FLOW_GRAPH_TYPE == FG_STOCHASTIC);
 
     long pgstart = System.currentTimeMillis();
-    System.err.print("Creating propagation graph: ");
+
     constructPropagationGraph(ignorePredicates);
     long pgend = System.currentTimeMillis();
-    System.err.println("" + (double)(pgend - pgstart) / 1000 + " sec");
+
 
     long startTime = System.currentTimeMillis();
 
@@ -203,7 +203,7 @@ public class Match implements UntypedGateway {
 
       applyFormula(arcs, nodes, iteration);
       
-      System.err.print(".");
+
 
       normalizeN1(nodes);
 

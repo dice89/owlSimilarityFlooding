@@ -58,6 +58,7 @@ public class Matcher {
         //set configuration
         sf.formula = formula;
         sf.FLOW_GRAPH_TYPE = flow_graph_type;
+        sf.TEST = false;
 
         ArrayList<MapPair> addedMatchings = new ArrayList<MapPair>();
 
